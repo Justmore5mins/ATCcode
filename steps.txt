@@ -1,0 +1,13 @@
+after pip install ultralytics
+
+!error
+OSError: [WinError 126] The specified module could not be found. Error loading "C:\Users\admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\torch\lib\c10.dll" or one of its dependencies.
+
+!solve:
+install torch torchvision torchaudio first.
+-------------------------------------------------
+!error
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1 Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+!solve
+https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_network <--download this app
